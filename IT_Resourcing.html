@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genex Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .hero-background {
+      background-image: url("assets/IT_Resourcing.jpeg"); /* Replace with the correct path to your image */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="bg-black p-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="ml-4">
+      <img src="assets/logo.png" alt="GenexCorp" class="h-12">
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden mr-4">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <i class="fas fa-bars h-6 w-6"></i> <!-- Font Awesome bars icon for the mobile menu -->
+      </button>
+    </div>
+
+    <!-- Links for larger screens -->
+    <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+      <li>
+        <a href="/index.html" class="text-white font-bold hover:text-yellow-400">HOME</a>
+      </li>
+      <li>
+        <a href="/services.html" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
+      </li>
+      <li>
+        <a href="/trainings.html" class="text-white font-bold hover:text-yellow-400">TRAININGS</a>
+      </li>
+      <li>
+        <a href="/jobs.html" class="text-white font-bold hover:text-yellow-400">JOBS</a>
+      </li>
+      <li>
+        <a href="/support.html" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
+      </li>
+      <li>
+        <!-- Search Icon using Font Awesome -->
+        <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu (initially hidden) -->
+  <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+    <li>
+      <a href="/index.html" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
+    </li>
+    <li>
+      <a href="/services.html" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
+    </li>
+    <li>
+      <a href="/trainings.html" class="text-white font-bold hover:text-yellow-400 block">TRAININGS</a>
+    </li>
+    <li>
+      <a href="/jobs.html" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
+    </li>
+    <li>
+      <a href="/support.html" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
+    </li>
+    <li>
+      <!-- Search Icon for Mobile using Font Awesome -->
+      <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+    </li>
+  </ul>
+</nav>
+
+<!-- Tailwind CSS requires JavaScript to toggle the mobile menu -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+
+  <!-- Hero Section -->
+<section class="hero-background bg-cover bg-center bg-no-repeat w-full h-screen flex items-center relative">
+  <!-- Dark overlay to enhance text contrast -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  
+  <!-- Content aligned to the left -->
+  <div class="relative z-10 max-w-lg ml-6 md:ml-12 lg:ml-20 text-left p-4 md:p-6 lg:p-8">
+  <h1 class="text-4xl md:text-4xl font-bold text-white leading-tight mb-6">
+    IT RESOURCING
+  </h1>
+  <p class="text-lg md:text-xl text-white leading-relaxed mb-6">
+    Everyone that is part of GenexCorp is passionate <br>
+    about how IT can help transform your business,<br>
+    which is why we work the way we do and why we<br>
+    are so successful at what we do.
+  </p>
+  <button
+    class="bg-white text-black font-semibold py-3 px-6 shadow-md rounded-lg hover:bg-gray-100 transition-colors">
+    EXPLORE MORE
+  </button>
+</div>
+</section>
+
+<section class="py-8 bg-white">
+  <h2 class="text-3xl md:text-5xl text-center font-bold mb-8 text-gray-800">
+    Your Trusted IT Solution Partner
+  </h2>
+  <p class="text-lg flex justify-center items-center md:text-xl text-black leading-relaxed mb-4 text-center">
+  Our team comprises a diverse group of specialists, including technical experts, functional consultants, and business<br> 
+  analysts. We bring together Business Process Management (BPM) creators, KPI designers, tool developers, UI/UX designers,<br> 
+  and support engineers to deliver comprehensive solutions. Backed by a seasoned team of IT consultants from various<br> 
+  industry verticals, we are just a call away from understanding your challenges, crafting tailored solutions, and seamlessly<br>
+  integrating with your team to create an efficient, collaborative environment where all business puzzles find their solutions.
+  <br></br>
+  Our goal is to build trusting and valuable relationships with you. We prioritize your needs, adopting a consultative and clear<br> 
+  thinking approach. We take the time to fully understand your business objectives before recommending the best solutions<br> 
+  tailored specifically to you.
+  <br></br>
+  We work collaboratively with your internal IT, functional, and business leaders, as well as any external suppliers and IT<br>
+  providers you may engage with. Our consultants have a proven track record of forming strong strategic partnerships,<br>
+  helping our clients maximize the potential of their IT investments.
+</p>
+
+  <div class="flex items-center justify-center mb-8">
+  <button class="bg-black text-white py-2 px-4 rounded-lg h-16 w-72 md:w-88 text-xl">
+    Let's Transform Together
+  </button>
+</div>
+</section>
+<section class="pb-8">
+  <!-- Image above the grid with left and right gaps -->
+  <div class="relative w-full max-w-screen-xl mx-auto">
+    <img src="assets/resourcingimg2.png" alt="Your Image" class="w-full h-100 object-cover">
+  </div>
+
+<section class="py-8 bg-white">
+  <h2 class="text-3xl md:text-4xl text-center font-bold mb-8 text-gray-800">
+    TECHNOLOGY CONSULTING ARENA
+  </h2>
+</section>
+
+<section class="flex items-center justify-center pb-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl px-4 mx-auto">
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/qlik.png" alt="Qlik" class="w-29 h-29 object-contain">
+    </div>
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/hive.png" alt="Hive" class="w-29 h-29 object-contain">
+    </div>
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/tableau.png" alt="Tableau" class="w-29 h-29 object-contain">
+    </div>
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/sapnet.png" alt="SAP NetWeaver" class="w-29 h-29 object-contain">
+    </div>
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/informatica.png" alt="Informatica" class="w-29 h-29 object-contain">
+    </div>
+    <div class="shadow-md rounded-md flex justify-center items-center transition-transform transform hover:scale-105 bg-white border border-gray-300 w-48 h-48 sm:w-56 sm:h-56">
+      <img src="assets/cloudera.png" alt="Cloudera" class="w-29 h-29 object-contain">
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Contact Us Section -->
+ <section class="bg-gray-200 p-6 md:p-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <form class="max-w-lg mx-auto">
+        
+        <!-- Name Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Name</label>
+            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Name" />
+        </div>
+        
+        <!-- Email Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Email</label>
+            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Email" />
+        </div>
+        
+        <!-- Message Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Message</label>
+            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Message"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <button class="bg-black text-white py-2 px-4 rounded-lg w-full md:w-50">Submit</button>
+    </form>
+</section>
+
+<!-- footer section -->
+<footer class="text-white py-10">
+    <!-- Second Row - Footer Information -->
+    <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
+        <!-- First Column - About GenexCorp -->
+        <div>
+            <h3 class="text-2xl mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+            <p class="text-lg mb-5">
+                Some believe in the power of numbers. Some believe in the power of
+                technology. We believe in the power of people, power of human touch
+                which brings best out of the best and the impact people can have on
+                technology.
+            </p>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+  <!-- Facebook Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-facebook-f text-3xl"></i>
+  </div>
+
+<!-- Instagram Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-instagram text-3xl"></i>
+  </div>
+
+  <!-- X (Twitter) Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-6 h-6">
+      <path fill="currentColor" d="M22.4 19.8L31 7H26.4L18.6 18.2L10.8 7H6L15.2 19.2L6.6 31H11.2L18.6 21.4L26 31H30.6L22.4 19.8Z"/>
+    </svg>
+  </div>
+
+  <!-- LinkedIn Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-linkedin-in text-3xl"></i>
+  </div>
+  </div>
+</div>
+
+        <!-- Second Column - Quick Links -->
+        <div>
+            <h3 class="flex text-2xl font-extrabold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2">
+                <li class="flex hover:underline cursor-pointer">HOME</li>
+                <li class="flex hover:underline cursor-pointer">Our Objective</li>
+                <li class="flex hover:underline cursor-pointer">Portfolio</li>
+                <li class="flex hover:underline cursor-pointer">Corporate Training</li>
+                <li class="flex hover:underline cursor-pointer">Career Augmentation Training</li>
+                <li class="flex hover:underline cursor-pointer">Jobs</li>
+                <li class="flex hover:underline cursor-pointer">Support</li>
+            </ul>
+        </div>
+
+        <!-- Third Column - Contact Information -->
+        <div>
+            <h3 class="text-2xl font-extrabold mb-4">CONTACT INFORMATION</h3>
+            <p class="text-lg mb-2">
+                Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
+                Hyderabad - 500085, Telangana, India
+            </p>
+            <p class="text-lg mb-2">Phone: +91 9876543210</p>
+            <p class="text-lg">Email: info@genexcorp.com</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

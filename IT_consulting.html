@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Genex Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For Font Awesome icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     .hero-background {
@@ -17,7 +16,7 @@
 <body>
 
   <!-- Navbar -->
-<nav class="bg-gray-950 p-4">
+<nav class="bg-black p-4">
   <div class="flex justify-between items-center">
     <!-- Logo -->
     <div class="ml-4">
@@ -95,7 +94,7 @@
   <section class="hero-background bg-cover bg-center bg-no-repeat w-full h-screen overflow-x-hidden flex items-center">
     <!-- Content aligned to the left on large screens, centered on small screens -->
   </section>
-  <nav class="bg-gray-950 p-4">
+  <nav class="bg-black p-4">
   <div class="flex justify-between items-center">
     <p style="color: white; font-weight: bold; font-size: 18px;">
     &nbsp &nbsp &nbsp &nbsp &nbsp Home >> Services >> <span style="color: #3385ff;">IT Consulting</span>
@@ -230,17 +229,14 @@
     </form>
 </section>
 
-
-
-
 <!-- footer section -->
 <footer class="text-white py-10">
     <!-- Second Row - Footer Information -->
     <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
         <!-- First Column - About GenexCorp -->
         <div>
-            <h3 class="text-lg mb-4 font-extrabold">ABOUT GENEXCORP</h3>
-            <p class="text-sm mb-5">
+            <h3 class="text-2xl mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+            <p class="text-lg mb-5">
                 Some believe in the power of numbers. Some believe in the power of
                 technology. We believe in the power of people, power of human touch
                 which brings best out of the best and the impact people can have on
@@ -248,35 +244,53 @@
             </p>
             <!-- Social Media Icons -->
             <div class="flex space-x-4">
-                <i class="fab fa-facebook-f text-xl cursor-pointer hover:text-blue-500"></i>
-                <i class="fab fa-twitter text-xl cursor-pointer hover:text-blue-400"></i>
-                <i class="fab fa-linkedin-in text-xl cursor-pointer hover:text-blue-700"></i>
-            </div>
-        </div>
+  <!-- Facebook Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-facebook-f text-3xl"></i>
+  </div>
+
+<!-- Instagram Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-instagram text-3xl"></i>
+  </div>
+
+  <!-- X (Twitter) Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-6 h-6">
+      <path fill="currentColor" d="M22.4 19.8L31 7H26.4L18.6 18.2L10.8 7H6L15.2 19.2L6.6 31H11.2L18.6 21.4L26 31H30.6L22.4 19.8Z"/>
+    </svg>
+  </div>
+
+  <!-- LinkedIn Icon -->
+  <div class="w-9 h-9 bg-black text-white rounded-none flex items-center justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <i class="fab fa-linkedin-in text-3xl"></i>
+  </div>
+  </div>
+</div>
 
         <!-- Second Column - Quick Links -->
         <div>
-            <h3 class="text-lg font-extrabold mb-4">QUICK LINKS</h3>
+            <h3 class="flex text-2xl font-extrabold mb-4">QUICK LINKS</h3>
             <ul class="space-y-2">
-                <li class="hover:underline cursor-pointer">HOME</li>
-                <li class="hover:underline cursor-pointer">Our Objective</li>
-                <li class="hover:underline cursor-pointer">Portfolio</li>
-                <li class="hover:underline cursor-pointer">Corporate Training</li>
-                <li class="hover:underline cursor-pointer">Career Augmentation Training</li>
-                <li class="hover:underline cursor-pointer">Jobs</li>
-                <li class="hover:underline cursor-pointer">Support</li>
+                <li class="flex hover:underline cursor-pointer">HOME</li>
+                <li class="flex hover:underline cursor-pointer">Our Objective</li>
+                <li class="flex hover:underline cursor-pointer">Portfolio</li>
+                <li class="flex hover:underline cursor-pointer">Corporate Training</li>
+                <li class="flex hover:underline cursor-pointer">Career Augmentation Training</li>
+                <li class="flex hover:underline cursor-pointer">Jobs</li>
+                <li class="flex hover:underline cursor-pointer">Support</li>
             </ul>
         </div>
 
         <!-- Third Column - Contact Information -->
         <div>
-            <h3 class="text-lg font-extrabold mb-4">CONTACT INFORMATION</h3>
-            <p class="text-sm mb-2">
+            <h3 class="text-2xl font-extrabold mb-4">CONTACT INFORMATION</h3>
+            <p class="text-lg mb-2">
                 Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
                 Hyderabad - 500085, Telangana, India
             </p>
-            <p class="text-sm mb-2">Phone: +91 9876543210</p>
-            <p class="text-sm">Email: info@genexcorp.com</p>
+            <p class="text-lg mb-2">Phone: +91 9876543210</p>
+            <p class="text-lg">Email: info@genexcorp.com</p>
         </div>
     </div>
 </footer>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genex Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For Font Awesome icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .hero-background {
+      background-image: url("assets/consultingHome.png"); /* Replace with the correct path to your image */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="bg-gray-950 p-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="ml-4">
+      <img src="assets/logo.png" alt="GenexCorp" class="h-12">
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden mr-4">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <i class="fas fa-bars h-6 w-6"></i> <!-- Font Awesome bars icon for the mobile menu -->
+      </button>
+    </div>
+
+    <!-- Links for larger screens -->
+    <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+      <li>
+        <a href="/index.html" class="text-white font-bold hover:text-yellow-400">HOME</a>
+      </li>
+      <li>
+        <a href="/services.html" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
+      </li>
+      <li>
+        <a href="/trainings.html" class="text-white font-bold hover:text-yellow-400">TRAININGS</a>
+      </li>
+      <li>
+        <a href="/jobs.html" class="text-white font-bold hover:text-yellow-400">JOBS</a>
+      </li>
+      <li>
+        <a href="/support.html" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
+      </li>
+      <li>
+        <!-- Search Icon using Font Awesome -->
+        <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu (initially hidden) -->
+  <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+    <li>
+      <a href="/index.html" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
+    </li>
+    <li>
+      <a href="/services.html" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
+    </li>
+    <li>
+      <a href="/trainings.html" class="text-white font-bold hover:text-yellow-400 block">TRAININGS</a>
+    </li>
+    <li>
+      <a href="/jobs.html" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
+    </li>
+    <li>
+      <a href="/support.html" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
+    </li>
+    <li>
+      <!-- Search Icon for Mobile using Font Awesome -->
+      <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+    </li>
+  </ul>
+</nav>
+
+<!-- Tailwind CSS requires JavaScript to toggle the mobile menu -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-background bg-cover bg-center bg-no-repeat w-full h-screen overflow-x-hidden flex items-center">
+    <!-- Content aligned to the left on large screens, centered on small screens -->
+  </section>
+  <nav class="bg-gray-950 p-4">
+  <div class="flex justify-between items-center">
+    <p style="color: white; font-weight: bold; font-size: 18px;">
+    &nbsp &nbsp &nbsp &nbsp &nbsp Home >> Services >> <span style="color: #3385ff;">IT Consulting</span>
+</p>
+  </div></nav>
+
+<section class="py-12 flex items-center justify-center min-h-screen">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-4">
+    <!-- Service Cards -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/Devops.jpg" alt="DevOps Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">DevOps Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery &nbsp&nbsp to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/Splunk.jpg" alt="Splunk Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">Splunk Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/fullstack1.jpg" alt="FullStack Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">FullStack Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/WebDev.jpg" alt="Web Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">Web Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/Chatbot.jpg" alt="ChatBot Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">ChatBot Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/servicenow.jpg" alt="ServiceNow Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">ServiceNow Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/aws.jpg" alt="AWS Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">AWS Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 border border-black max-w-md mx-auto">
+      <img src="assets/uiux.jpg" alt="UI/UX Development" class="w-full h-60 object-cover" />
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-bold mb-2">UI/UX Development</h3>
+        <p class="text-lg text-gray-700 mb-4">Streamline your development and operations with our comprehensive DevOps solutions. We integrate automation and continuous delivery to enhance efficiency and accelerate your project's success.</p>
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-12 bg-white-100">
+  <h2 class="text-5xl text-center font-bold mb-10">TECHNOLOGY CONSULTING ARENA</h2>
+<section class="py-12 flex items-center justify-center">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto place-items-center">
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/qlik.png" alt="Qlik" class="w-49 h-48">
+    </div>
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/hive.png" alt="Hive" class="w-48 h-48">
+    </div>
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/tableau.png" alt="Tableau" class="w-49 h-49">
+    </div>
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/sapnet.png" alt="SAP NetWeaver" class="w-49 h-49">
+    </div>
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/informatica.png" alt="Informatica" class="w-49 h-49">
+    </div>
+    <div class="shadow-lg rounded-lg flex justify-center items-center transition-transform transform hover:scale-105 border border-black w-80 h-80">
+      <img src="assets/cloudera.png" alt="Cloudera" class="w-49 h-49">
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact Us Section -->
+ <section class="bg-gray-200 p-6 md:p-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <form class="max-w-lg mx-auto">
+        
+        <!-- Name Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Name</label>
+            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Name" />
+        </div>
+        
+        <!-- Email Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Email</label>
+            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Email" />
+        </div>
+        
+        <!-- Message Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Message</label>
+            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Message"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <button class="bg-black text-white py-2 px-4 rounded-lg w-full md:w-50">Submit</button>
+    </form>
+</section>
+
+
+
+
+<!-- footer section -->
+<footer class="text-white py-10">
+    <!-- Second Row - Footer Information -->
+    <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
+        <!-- First Column - About GenexCorp -->
+        <div>
+            <h3 class="text-lg mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+            <p class="text-sm mb-5">
+                Some believe in the power of numbers. Some believe in the power of
+                technology. We believe in the power of people, power of human touch
+                which brings best out of the best and the impact people can have on
+                technology.
+            </p>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <i class="fab fa-facebook-f text-xl cursor-pointer hover:text-blue-500"></i>
+                <i class="fab fa-twitter text-xl cursor-pointer hover:text-blue-400"></i>
+                <i class="fab fa-linkedin-in text-xl cursor-pointer hover:text-blue-700"></i>
+            </div>
+        </div>
+
+        <!-- Second Column - Quick Links -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2">
+                <li class="hover:underline cursor-pointer">HOME</li>
+                <li class="hover:underline cursor-pointer">Our Objective</li>
+                <li class="hover:underline cursor-pointer">Portfolio</li>
+                <li class="hover:underline cursor-pointer">Corporate Training</li>
+                <li class="hover:underline cursor-pointer">Career Augmentation Training</li>
+                <li class="hover:underline cursor-pointer">Jobs</li>
+                <li class="hover:underline cursor-pointer">Support</li>
+            </ul>
+        </div>
+
+        <!-- Third Column - Contact Information -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">CONTACT INFORMATION</h3>
+            <p class="text-sm mb-2">
+                Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
+                Hyderabad - 500085, Telangana, India
+            </p>
+            <p class="text-sm mb-2">Phone: +91 9876543210</p>
+            <p class="text-sm">Email: info@genexcorp.com</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
